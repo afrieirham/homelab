@@ -27,7 +27,7 @@ syntax on
 
 **3. Network configuration**
 
-**1. [[guide - configure static ip on linux]]**
+**1. [guide - configure static ip on linux](guide%20-%20configure%20static%20ip%20on%20linux.md)**
 
 **Disable ipv6**
 ```bash
@@ -37,6 +37,6 @@ net.ipv6.conf.default.disable_ipv6 = 1
 net.ipv6.conf.lo.disable_ipv6 = 1
 ```
 
-**4. [[guide - install and setup docker with auto prune]]**
+**4. [guide - install and setup docker with auto prune](guide%20-%20install%20and%20setup%20docker%20with%20auto%20prune.md)**
 
-**5. [[guide - setup github ssh]]**
+**5. [guide - setup github ssh](guide%20-%20setup%20github%20ssh.md)**
