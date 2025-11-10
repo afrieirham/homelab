@@ -27,16 +27,7 @@ syntax on
 
 ### 3. Network configuration
 
-**Set static IP**
-```bash
-# get connection name
-nmcli connection show --active
-
-# configure
-sudo nmcli connection modify "CONNECTION_NAME" ipv4.method manual
-sudo nmcli connection modify "CONNECTION_NAME" ipv4.addresses 192.168.100.200/24
-sudo nmcli connection modify "CONNECTION_NAME" ipv4.gateway 192.168.100.1
-```
+**1. [[guide - configure static ip on linux]]**
 
 **Disable ipv6**
 ```bash
@@ -78,4 +69,4 @@ chmod +x /usr/local/bin/docker-prune.sh
 0 3 * * * /usr/local/bin/docker-prune.sh >> /var/log/docker-prune.log 2>&1
 ```
 
-#### 5. [[Setup GitHub SSH]]
+#### 5. [[guide - setup github ssh]]

@@ -1,3 +1,4 @@
+### Server
 
 **1. Install ethtool**
 ```shell
@@ -48,4 +49,16 @@ WantedBy=multi-user.target
 ```shell
 sudo systemctl enable wol.service
 sudo systemctl start wol.service
+```
+
+### Waker
+
+**1. Install wakeonlan**
+```shell
+sudo apt install wakeonlan
+```
+
+**2. Add alias**
+```
+alias wake-<machine>="wakeonlan <mac_address>
 ```
