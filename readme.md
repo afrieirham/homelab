@@ -1,4 +1,4 @@
-# afrie's personal note about homelabbing
+# afrie's note about homelabbing
 
 best viewed in obsidian
 
