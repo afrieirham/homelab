@@ -1,5 +1,4 @@
 
-
 **1. Setup MergerFS**
 
 > 1. Wipe and partition disk to any filesystem (ext4/xfs should work).
