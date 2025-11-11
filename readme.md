@@ -20,6 +20,11 @@ best viewed in obsidian
 | case           | mboss atx                              |
 
 **2. raspberry pi 4b**
-- running 24/7
-- pi hole
-- wake main server using wake on lan
+
+services
+- cockpit (host)
+- pihole (docker)
+- portainer (docker)
+- nginx-proxy (docker)
+
+refer [setup - raspberry pi](setup%20-%20raspberry%20pi.md) for more info.
