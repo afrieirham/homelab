@@ -1,12 +1,20 @@
 # afrie's note about homelabbing
 
-best viewed in obsidian
+`notes` are best viewed in [obsidian](https://obsidian.md/), `config` is fine on github/vscode. 
+
+### why?
+the notes are for me so that i dont forget what i've done/encountered/solve. it's in public if anyone find it useful. it's also an ego booster haha.
+
+i'm learning as i go, lately i really enjoyed learning and writing at the same time, felt really productive and feels like i learned a lot.
+
+### what?
 
 **1. server pc (main server)**
 - samba/nfs server (WIP)
 - jellyfin server (WIP)
 - immich server (WIP)
 - portainer (WIP)
+- cockpit (WIP)
 
 | components     | model name                             |
 | -------------- | -------------------------------------- |
