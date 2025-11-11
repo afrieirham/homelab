@@ -6,7 +6,7 @@ https://docs.docker.com/engine/install/debian/#install-using-the-repository
 
 One liner script
 ```bash
-sudo bash -c 'echo "docker system prune -af --filter \"until=\$((30*24))h\"" > /usr/local/bin/docker-prune.sh'
+sudo bash -c 'echo "docker system prune -af --filter \"until=24h\"" > /usr/local/bin/docker-prune.sh'
 ```
 
 Add script manually
@@ -18,9 +18,10 @@ vim /usr/local/bin/docker-prune.sh
 
 2. Paste docker prune script
 ```bash
-docker system prune -af --filter "until=$((30*24))h"
-```
+docker system prune -af --filter "until=24h"
+``` 
 
+> Feel free to change to duration filter to feed your need, this one prune anything more than 24h.
 
 **3. Give +x permission**
 ```bash
@@ -28,6 +29,9 @@ chmod +x /usr/local/bin/docker-prune.sh
 ```
 
 **4. Add cron job at 3am**
+
+Use `crontab -e` and add this to end of file.
+
 ```bash
 0 3 * * * /usr/local/bin/docker-prune.sh >> /var/log/docker-prune.log 2>&1
 ```
