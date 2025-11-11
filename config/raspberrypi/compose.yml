@@ -9,7 +9,7 @@ services:
       - "53:53/tcp"
       - "53:53/udp"
       # The HTTP/S ports are now handled by the nginx-proxy service
-      - "8080:80/tcp"
+      # - "8080:80/tcp"
       # - "443:443/tcp"    <-- REMOVE
       # Uncomment the line below if you are using Pi-hole as your DHCP server
       #- "67:67/udp"
