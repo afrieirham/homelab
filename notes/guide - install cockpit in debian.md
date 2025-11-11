@@ -37,6 +37,16 @@ sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 
 > `-t` is needed to tell apt to download cockpit from backport repository.
 
-**5. Done**
+**5. (Optional) Allow http**
 
-You can now access cockpit web ui on port 9090.
+Add this to `/etc/cockpit/cockpit.conf`
+```ini
+[WebService]
+AllowUnencrypted=true
+```
+
+> this is needed if you want to use nginx domain proxy but in http
+
+**6. Done**
+
+You can now access cockpit web ui on port 9090 or <localdomain>.
