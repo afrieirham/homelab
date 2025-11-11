@@ -8,29 +8,24 @@ services:
       # DNS Ports
       - "53:53/tcp"
       - "53:53/udp"
-      # Default HTTP Port
-      - "80:80/tcp"
-      # Default HTTPs Port. FTL will generate a self-signed certificate
-      - "443:443/tcp"
+      # The HTTP/S ports are now handled by the nginx-proxy service
+      # - "80:80/tcp"      <-- REMOVE
+      # - "443:443/tcp"    <-- REMOVE
       # Uncomment the line below if you are using Pi-hole as your DHCP server
       #- "67:67/udp"
       # Uncomment the line below if you are using Pi-hole as your NTP server
       #- "123:123/udp"
     environment:
       FTLCONF_dns_upstreams: "1.1.1.1;1.0.0.1"
-      # Set the appropriate timezone for your location (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g:
       TZ: "Asia/Kuala_Lumpur"
-      # Set a password to access the web interface. Not setting one will result in a random password being assigned
       FTLCONF_webserver_api_password: ${ADMIN_PASSWORD}
-      # If using Docker's default `bridge` network setting the dns listening mode should be set to 'all'
       FTLCONF_dns_listeningMode: "all"
-    # Volumes store your data between container upgrades
     volumes:
-      # For persisting Pi-hole's databases and common configuration file
       - "/etc/pihole:/etc/pihole"
     cap_add:
       - SYS_NICE
     restart: unless-stopped
+
   portainer:
     container_name: portainer
     image: portainer/portainer-ce:lts
@@ -38,9 +33,23 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
+    # Ports are no longer needed here, they are handled by the nginx-proxy
+    # ports:
+    #   - 9443:9443      <-- REMOVE
+    #   - 8000:8000      <-- REMOVE
+
+  nginx-proxy:
+    container_name: nginx-proxy
+    image: nginx:latest
+    restart: unless-stopped
     ports:
-      - 9443:9443
-      - 8000:8000  # Remove if you do not intend to use Edge Agents
+      # The single entry point for all web traffic
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - pihole
+      - portainer
 
 volumes:
   portainer_data:
