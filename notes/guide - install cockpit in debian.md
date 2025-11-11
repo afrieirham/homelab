@@ -37,7 +37,7 @@ sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 
 > `-t` is needed to tell apt to download cockpit from backport repository.
 
-**5. (Optional) Allow http**
+**5. (Optional) Allow http connection**
 
 Add this to `/etc/cockpit/cockpit.conf`
 ```ini

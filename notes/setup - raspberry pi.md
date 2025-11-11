@@ -36,18 +36,28 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 
 **6. [guide - install cockpit in debian](guide%20-%20install%20cockpit%20in%20debian.md)**
 
-**7. Run pi hole and portainer using docker [compose.yml](docker-compose/raspberrypi/compose.yml)**
+**7. Run pi hole and portainer using docker [compose.yml](config/raspberrypi/compose.yml)**
 
-> Special case for portainer on debian 13 https://github.com/portainer/portainer/issues/12925#issuecomment-3516549977
+> As of this writing, there's a weird issue where you can't connect to local docker environment if you're on debian 13. 
+> 
+> Here's how to fix → https://github.com/portainer/portainer/issues/12925#issuecomment-3516549977
 
-1. systemctl edit docker.service
-2. Add this part above the line _### Lines below this comment will be discarded:_  
+
+Edit docker service
+```bash
+systemctl edit docker.service
 ```
+
+Add this part above the line `### Lines below this comment will be discarded`
+```ini
 [Service]  
 	Environment=DOCKER_MIN_API_VERSION=1.24
 ```
 
-3. Save the file and exit
-4. systemctl restart docker
+Restart docker
+```bash
+systemctl restart docker
+```
+
 
 
