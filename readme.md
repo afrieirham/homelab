@@ -27,4 +27,4 @@ services
 - portainer (docker)
 - nginx-proxy (docker)
 
-refer [setup - raspberry pi](setup%20-%20raspberry%20pi.md) for more info.
+refer [setup - raspberry pi](notes/setup%20-%20raspberry%20pi.md) for more info.
