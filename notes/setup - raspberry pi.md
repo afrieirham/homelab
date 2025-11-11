@@ -40,3 +40,5 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 **4. [guide - install and setup docker with auto prune](guide%20-%20install%20and%20setup%20docker%20with%20auto%20prune.md)**
 
 **5. [guide - setup github ssh](guide%20-%20setup%20github%20ssh.md)**
+
+**6. [guide - install cockpit in debian](guide%20-%20install%20cockpit%20in%20debian.md)**
