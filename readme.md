@@ -10,11 +10,14 @@ i'm learning as i go, lately i really enjoyed learning and writing at the same t
 ### what?
 
 **1. server pc (main server)**
-- samba/nfs server (WIP)
-- jellyfin server (WIP)
-- immich server (WIP)
-- portainer (WIP)
-- cockpit (WIP)
+- cockpit (host)
+- portainer (docker)
+- nginx-proxy (docker)
+- samba/nfs server (wip)
+- jellyfin server (wip)
+- immich server (wip)
+
+refer [setup - deban nas](notes/setup%20-%20debian%20nas.md) for more info.
 
 | components     | model name                             |
 | -------------- | -------------------------------------- |

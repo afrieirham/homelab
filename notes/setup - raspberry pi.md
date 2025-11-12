@@ -38,7 +38,7 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 
 ### **final: running docker compose**
 
-- Config file in [config/raspberrypi/compose.yml](config/raspberrypi/compose.yml)
+- Config file in [config/raspberrypi/compose.yml](../config/raspberrypi/compose.yml)
 - [hotfix - fix portainer cannot connect to local environment](hotfix%20-%20fix%20portainer%20cannot%20connect%20to%20local%20environment.md)
 
 

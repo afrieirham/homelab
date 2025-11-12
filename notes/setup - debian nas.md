@@ -24,7 +24,7 @@ enable wake on lan
 
 ### **final: running docker compose**
 
-- Config file in [config/debian/compose.yml](config/debian/compose.yml)
+- Config file in [config/debian/compose.yml](../config/debian/compose.yml)
 - [hotfix - fix portainer cannot connect to local environment](hotfix%20-%20fix%20portainer%20cannot%20connect%20to%20local%20environment.md)
 
 
