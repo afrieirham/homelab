@@ -48,7 +48,7 @@ linux scoring system
 - write 2
 - execute 1
 
-775 means rwxrwxr -x
+775 means rwxrwxr-x
 
 +x means add x to all
 
