@@ -45,6 +45,11 @@ Add this to `/etc/cockpit/cockpit.conf`
 AllowUnencrypted=true
 ```
 
+Then restart cockpit
+```bash
+systemctl restart cockpit
+```
+
 > this is needed if you want to use nginx domain proxy but in http
 
 **6. Done**
