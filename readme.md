@@ -17,7 +17,7 @@ i'm learning as i go, lately i really enjoyed learning and writing at the same t
 - jellyfin server (wip)
 - immich server (wip)
 
-refer [setup - deban nas](notes/setup%20-%20debian%20nas.md) for more info.
+refer [setup - debian nas](notes/setup%20-%20debian%20nas.md) for more info.
 
 | components     | model name                             |
 | -------------- | -------------------------------------- |
