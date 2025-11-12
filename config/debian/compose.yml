@@ -1,4 +1,17 @@
 services:
+  nginx-proxy:
+    container_name: nginx-proxy
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      # The single entry point for all web traffic
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - portainer
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   portainer:
     container_name: portainer
     image: portainer/portainer-ce:lts
@@ -6,45 +19,9 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
-    ports:
-      - 9443:9443
-      - 8000:8000  # Remove if you do not intend to use Edge Agents
-
-  jellyfin:
-    image: jellyfin/jellyfin
-    container_name: jellyfin
-    user: 1001:100 # uid:gid
-    ports:
-      - 8096:8096/tcp
-      - 7359:7359/udp
-    volumes:
-      - type: bind
-        source: /appdata/jellyfin/config
-        target: /config
-      - type: bind
-        source: /appdata/jellyfin/cache
-        target: /cache
-      - type: bind
-        source: /mnt/disk1/jellyfin/media
-        target: /media
-      # - type: bind
-      #   source: /path/to/media2
-      #   target: /media2
-      #   read_only: true
-      # Optional - extra fonts to be used during transcoding with subtitle burn-in
-      # - type: bind
-      #   source: /path/to/fonts
-      #   target: /usr/local/share/fonts/custom
-      #   read_only: true
-    restart: 'unless-stopped'
-    # Optional - alternative address used for autodiscovery
-    # environment:
-      # - JELLYFIN_PublishedServerUrl=http://example.com
-    # Optional - may be necessary for docker healthcheck to pass if running in host network mode
-    extra_hosts:
-      - 'host.docker.internal:host-gateway'
-    devices:
-      - /dev/dri:/dev/dri
+    # ports:
+    #   - 9443:9443
+    #   - 8000:8000  # Remove if you do not intend to use Edge Agents
 
 volumes:
   portainer_data:
