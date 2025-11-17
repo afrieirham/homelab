@@ -33,7 +33,7 @@ ip a
 ```
 
 Result
-![[Pasted image 20251110202430.png]]
+![Pasted image 20251110202430.png](attachments/Pasted%20image%2020251110202430.png)
 
 **Create new config file with this template**
 ```shell

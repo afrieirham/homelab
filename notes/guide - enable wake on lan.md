@@ -11,7 +11,7 @@ ip addr
 ```
 
 In this case, we want to enable it on `enp1s0`
-![[Pasted image 20251102032111.png]]
+![Pasted image 20251102032111.png](attachments/Pasted%20image%2020251102032111.png)
 
 **3. Check if WoL is enable on the interface**
 ```shell
@@ -22,7 +22,7 @@ If you see `Supports Wake-on: pumbg`, that mean it's supported.
 
 If you see `Wake-on: g`, that mean it's enabled. In this case it's not.
 
-![[Pasted image 20251102032310.png]]
+![Pasted image 20251102032310.png](attachments/Pasted%20image%2020251102032310.png)
 
 **4. Enable WoL**
 

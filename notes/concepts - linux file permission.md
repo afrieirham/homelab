@@ -8,7 +8,7 @@ Every files and directory have 3 permission groups
 
 To see, go to any directory and run the `ls -l` command.
 
-![[Pasted image 20251101120939.png]]
+![Pasted image 20251101120939.png](attachments/Pasted%20image%2020251101120939.png)
 
 **1st section** 
 
@@ -52,5 +52,5 @@ linux scoring system
 
 +x means add x to all
 
-![[Pasted image 20251101164702.png]]
+![Pasted image 20251101164702.png](attachments/Pasted%20image%2020251101164702.png)
 
