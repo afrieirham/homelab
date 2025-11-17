@@ -10,12 +10,14 @@ i'm learning as i go, lately i really enjoyed learning and writing at the same t
 ### what?
 
 **1. server pc (main server)**
+
+services
 - cockpit (host)
+- samba/nfs server (host) wip
 - portainer (docker)
 - nginx-proxy (docker)
-- samba/nfs server (wip)
-- jellyfin server (wip)
-- immich server (wip)
+- jellyfin (docker) wip
+- immich (docker) wip
 
 refer [setup - debian nas](notes/setup%20-%20debian%20nas.md) for more info.
 
@@ -30,12 +32,13 @@ refer [setup - debian nas](notes/setup%20-%20debian%20nas.md) for more info.
 | storage drives | 3 x 1tb seagate ironwolf pro nas drive |
 | case           | mboss atx                              |
 
-**2. raspberry pi 4b**
+**2. raspberry pi 4 model b**
 
 services
 - cockpit (host)
 - pihole (docker)
 - portainer (docker)
 - nginx-proxy (docker)
+- vaultwarden (docker) wip
 
 refer [setup - raspberry pi](notes/setup%20-%20raspberry%20pi.md) for more info.
