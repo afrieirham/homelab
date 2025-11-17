@@ -5,6 +5,8 @@ Mounting drives let you "see" the contents of the drive.
 **Pre-requisite**
 1. All drives has filesystem formatted. [Learn more](guide%20-%20how%20to%20create%20disk%20partition%20and%20format%20with%20filesystem.md)
 
+#### **Mounting drives**
+
 **1. Create a mount point**
 
 This is just a directory.
@@ -69,3 +71,10 @@ Now you can see we have 3 new disks mounted.
 
 You can reboot you machine and run the command again to make sure it is mounted on boot.
 
+#### **Unmounting the drives**
+
+Remove the config from `/etc/fstab` or run this command to unmount temporarily.
+
+```bash
+umount /path/to/disk # or /path/to/mount-point
+```
