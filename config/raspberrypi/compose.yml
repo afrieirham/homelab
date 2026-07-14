@@ -62,9 +62,9 @@ services:
       - PB_ADMIN_EMAIL=${ADMIN_EMAIL}
       - PB_ADMIN_PASSWORD=${ADMIN_PASSWORD}
     volumes:
-      - ./pb_data:/pb_data
-      - ./pb_public:/pb_public
-      - ./pb_migrations:/pb_migrations
+      - /etc/pocketbase/bukitjalilstadium/pb_data:/pb_data
+      - /etc/pocketbase/bukitjalilstadium/pb_public:/pb_public
+      - /etc/pocketbase/bukitjalilstadium/pb_migrations:/pb_migrations
     healthcheck:
       test:
         [
