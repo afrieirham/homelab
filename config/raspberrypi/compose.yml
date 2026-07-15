@@ -50,21 +50,21 @@ services:
     depends_on:
       - pihole
       - portainer
-      - pb-bukitjalil
+      - pocketbase
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
-  pb-bukitjalil:
-    container_name: pb-bukitjalil
+  pocketbase:
+    container_name: pocketbase
     image: ghcr.io/muchobien/pocketbase:latest
     restart: unless-stopped
     environment:
       - PB_ADMIN_EMAIL=${ADMIN_EMAIL}
       - PB_ADMIN_PASSWORD=${ADMIN_PASSWORD}
     volumes:
-      - /var/lib/pocketbase/bukitjalilstadium/pb_data:/pb_data
-      - /var/lib/pocketbase/bukitjalilstadium/pb_public:/pb_public
-      - /var/lib/pocketbase/bukitjalilstadium/pb_migrations:/pb_migrations
+      - /var/lib/pocketbase/pb_data:/pb_data
+      - /var/lib/pocketbase/pb_public:/pb_public
+      - /var/lib/pocketbase/pb_migrations:/pb_migrations
     healthcheck:
       test:
         [
