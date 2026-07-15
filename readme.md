@@ -39,6 +39,6 @@ services
 - pihole (docker)
 - portainer (docker)
 - nginx-proxy (docker)
-- vaultwarden (docker) wip
+- pocketbase (docker)
 
 refer [setup - raspberry pi](notes/setup%20-%20raspberry%20pi.md) for more info.
