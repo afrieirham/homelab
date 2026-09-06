@@ -51,6 +51,7 @@ services:
       - pihole
       - portainer
       - pocketbase
+      - memos
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
@@ -78,6 +79,17 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
+
+  memos:
+    image: neosmemo/memos:stable
+    container_name: memos
+    restart: unless-stopped
+    volumes:
+      - /var/opt/memos:/var/opt/memos
+    environment:
+      MEMOS_PORT: 5230
+      MEMOS_DRIVER: sqlite
+
 
 volumes:
   portainer_data:
