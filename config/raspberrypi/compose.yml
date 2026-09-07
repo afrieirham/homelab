@@ -85,7 +85,7 @@ services:
     container_name: memos
     restart: unless-stopped
     volumes:
-      - /var/opt/memos:/var/opt/memos
+      - /mnt/usb1/memos:/var/opt/memos
     environment:
       MEMOS_PORT: 5230
       MEMOS_DRIVER: sqlite
