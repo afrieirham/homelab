@@ -5,7 +5,7 @@ After ssh into raspberry pi, update and upgrade everything.
 sudo apt update && sudo apt full-upgrade
 ```
 
-**IMPORTANT:** use full-upgrade, read more [here](https://www.raspberrypi.com/documentation/computers/os.html#:~:text=apt%20full%2Dupgrade-,TIP,-Unlike%20Debian%2C%20Raspberry).
+**IMPORTANT:** use full-upgrade, read more [here]([https://www.raspberrypi.com/documentation/computers/os.html#:~:text=apt%20full%2Dupgrade-,TIP,-Unlike%20Debian%2C%20Raspberry](https://www.raspberrypi.com/documentation/computers/os.html#os-installation:~:text=Update%20your%20installed%20packages%20to%20their%20latest%20versions)).
 
 ### **2. install git, vim, fastfetch, inxi, duf**
 
