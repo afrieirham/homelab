@@ -25,7 +25,12 @@ create `/mnt/storage` and add this in `/etc/fstab`
 this will pool all data disks `/mnt/disk*` into 1 mount point `/mnt/storage`
 
 **2. Setup snapraid**
-https://www.linuxserver.io/blog/2017-06-24-the-perfect-media-server-2017#setting-up-the-drives-using-mergerfs
+
+install snapraid
+- [guide - install and setup snapraid auto-update](guide%20-%20install%20and%20setup%20snapraid%20auto-update.md)
+
+configure snapraid
+...
 
 **3. Setup samba**
 https://www.linuxserver.io/blog/2017-06-24-the-perfect-media-server-2017#setting-up-the-drives-using-mergerfs
