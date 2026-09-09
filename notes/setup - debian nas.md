@@ -1,7 +1,7 @@
-### **1. install git, vim, fastfetch**
+### **1. install git, vim, fastfetch, inxi, duf**
 
 ```bash
-sudo apt install git vim fastfetch
+sudo apt install git vim fastfetch inxi duf
 ```
 
 git

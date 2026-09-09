@@ -7,11 +7,11 @@ sudo apt update && sudo apt full-upgrade
 
 **IMPORTANT:** use full-upgrade, read more [here](https://www.raspberrypi.com/documentation/computers/os.html#:~:text=apt%20full%2Dupgrade-,TIP,-Unlike%20Debian%2C%20Raspberry).
 
-### **2. install git, vim, fastfetch**
+### **2. install git, vim, fastfetch, inxi, duf**
 
 Install script
 ```bash
-sudo apt install fastfetch vim git
+sudo apt install git vim fastfetch inxi duf
 ```
 
 **git**
