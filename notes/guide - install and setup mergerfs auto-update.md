@@ -38,4 +38,4 @@ systemctl enable --now pms-mergerfs-update.timer
 ```
 
 **Expected result**
-![[Pasted image 20260910001716.png]]
+![Pasted image 20260910001716.png](Pasted%20image%2020260910001716.png)
