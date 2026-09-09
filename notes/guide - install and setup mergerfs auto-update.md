@@ -6,7 +6,7 @@ source: https://perfectmediaserver.com/02-tech-stack/mergerfs/
 curl -fsSL https://perfectmediaserver.com/scripts/install_mergerfs.sh | sh
 ```
 
-**2. setup automated mergerfs update**
+**2. setup automated update**
 
 Create service at `/etc/systemd/system/pms-mergerfs-update.service`.
 ```bash
