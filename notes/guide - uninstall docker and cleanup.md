@@ -20,7 +20,7 @@ sudo apt purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker
 ```bash
 crontab -e
 ```
-comment out previous cron from [guide - install and setup docker with auto prune](notes/guide - install and setup docker with auto prune)
+comment out previous cron from [guide - install and setup docker with auto prune](guide%20-%20install%20and%20setup%20docker%20with%20auto%20prune.md)
 
 **5. remove docker-related files**
 ```bash
