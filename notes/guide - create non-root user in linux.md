@@ -5,7 +5,11 @@
 ```shell
 # -m create home directory
 # -s /bin/bash assign shell
-adduser -m -s /bin/bash newuser
+useradd -m -s /bin/bash username
+
+# (optional) assign zsh and add user to sudo
+apt install zsh
+useradd -m -s /usr/bin/zsh -G sudo username
 ```
 
 3. Create password for user
