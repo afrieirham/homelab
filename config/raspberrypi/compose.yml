@@ -81,7 +81,7 @@ services:
       MEMOS_INSTANCE_URL: http://memo.pi
 
   bentopdf:
-    image: bentopdf/bentopdf:latest
+    image: ghcr.io/alam00000/bentopdf-simple:latest
     container_name: bentopdf
     restart: unless-stopped
 
