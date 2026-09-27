@@ -12,12 +12,12 @@ i'm learning as i go, lately i really enjoyed learning and writing at the same t
 **1. server pc (main server)**
 
 services
+- incus (host)
 - cockpit (host)
-- samba/nfs server (host) wip
-- portainer (docker)
-- nginx-proxy (docker)
-- jellyfin (docker) wip
-- immich (docker) wip
+- samba server (host)
+	- mergerfs + snapraid
+- caddy reverse-proxy (incus)
+- dev environment (incus)
 
 refer [setup - debian nas](notes/setup%20-%20debian%20nas.md) for more info.
 
@@ -26,11 +26,12 @@ refer [setup - debian nas](notes/setup%20-%20debian%20nas.md) for more info.
 | cpu            | intel i3-12100                         |
 | gpu            | intel uhd graphics 730                 |
 | motherboard    | asrock h610m-hvs                       |
-| psu            | corsair cx550 (80 plus bronze)         |
-| ram            | 2 x 8gb 3200mhz ddr4                   |
-| boot drive     | 1tb nvme ssd                           |
+| ram            | 32gb 3200mhz ddr4                      |
+| boot drive     | 1tb transcend ts1tmte300s nvme ssd     |
 | storage drives | 3 x 1tb seagate ironwolf pro nas drive |
 | case           | mboss atx                              |
+| psu            | corsair cx550 (80 plus bronze)         |
+
 
 **2. raspberry pi 4 model b**
 
@@ -40,5 +41,6 @@ services
 - portainer (docker)
 - nginx-proxy (docker)
 - pocketbase (docker)
+- memos (docker)
 
 refer [setup - raspberry pi](notes/setup%20-%20raspberry%20pi.md) for more info.
