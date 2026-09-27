@@ -1,5 +1,4 @@
-
-# Homelab Cockpit Reverse Proxy Configuration Record
+# Cockpit Reverse Proxy Configuration Record
 
 ## 1. System Topology
 * **Host Engine:** Debian 13 (Trixie) running Cockpit on physical port `9090`.

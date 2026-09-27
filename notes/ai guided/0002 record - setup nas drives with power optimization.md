@@ -1,5 +1,5 @@
 
-# Homelab Server Upgrade and Optimization Log
+# Server Upgrade and Optimization Log
 
 ## 1. System Baseline and Hardware Profile
 * **Host OS:** Debian 13 (Trixie), Linux kernel `6.12.107+-amd64`

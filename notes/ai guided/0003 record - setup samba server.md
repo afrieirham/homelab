@@ -1,4 +1,4 @@
-# Homelab Samba Configuration & Troubleshooting Record
+# Samba Configuration & Troubleshooting Record
 
 ## 1. System Environment
 * **Host OS:** Debian 13 (Trixie)
