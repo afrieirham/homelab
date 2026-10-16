@@ -41,6 +41,7 @@ services:
       - pocketbase
       - memos
       - bentopdf
+      - bookmarks
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
@@ -89,8 +90,6 @@ services:
     image: ghcr.io/afrieirham/bookmark-manager:latest
     container_name: bookmarks
     restart: unless-stopped
-    ports:
-      - "8080:8080"
     environment:
       PORT: "8080"
       DB_PATH: "/data/bookmarks.sqlite"
