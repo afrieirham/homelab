@@ -85,6 +85,26 @@ services:
     container_name: bentopdf
     restart: unless-stopped
 
+  bookmarks:
+    image: ghcr.io/afrieirham/bookmark-manager:latest
+    container_name: bookmarks
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      DB_PATH: "/data/bookmarks.sqlite"
+      TOKEN: "${ADMIN_PASSWORD}"
+    volumes:
+      - /mnt/usb1/bookmarks:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:$${PORT:-8080}/healthz || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+
 volumes:
   portainer_data:
     name: portainer_data
