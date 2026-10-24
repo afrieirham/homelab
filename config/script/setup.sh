@@ -10,4 +10,10 @@ echo 'unqualified-search-registries = ["docker.io"]' | sudo tee /etc/containers/
 # Verify
 podman --version
 podman-compose --version
-podman info --format '{{.Registries.Search}}'
+
+# Install tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
+
+# Login tailscale and setup ssh
+sudo tailscale login
+sudo tailscale up --ssh
