@@ -50,6 +50,7 @@ refer [setup - raspberry pi](notes/setup%20-%20raspberry%20pi.md) for more info.
 | components     | model name                             |
 | -------------- | -------------------------------------- |
 | cpu            | intel i5-3300                          |
-| gpu            | intel hd graphics 2500                 |
+| igpu           | intel hd graphics 2500                 |
+| gpu            | nvidia gt 630                          |
 | motherboard    | asus p8h61-m lx plus rev 2.0           |
 | ram            | 2 x 4gb 16000mhz ddr3                  |
