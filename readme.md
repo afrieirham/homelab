@@ -28,9 +28,9 @@ refer [setup - debian nas](notes/setup%20-%20debian%20nas.md) for more info.
 | motherboard    | asrock h610m-hvs                       |
 | ram            | 32gb 3200mhz ddr4                      |
 | boot drive     | 1tb transcend ts1tmte300s nvme ssd     |
-| storage drives | 3 x 1tb seagate ironwolf pro nas drive |
-| case           | mboss atx                              |
+| storage drives | 2 x 1tb seagate ironwolf pro nas drive |
 | psu            | corsair cx550 (80 plus bronze)         |
+| case           | mboss atx                              |
 
 
 **2. raspberry pi 4 model b**
