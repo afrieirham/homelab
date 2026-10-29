@@ -44,3 +44,12 @@ services
 - memos (docker)
 
 refer [setup - raspberry pi](notes/setup%20-%20raspberry%20pi.md) for more info.
+
+**3. unused pc**
+
+| components     | model name                             |
+| -------------- | -------------------------------------- |
+| cpu            | intel i5-3300                          |
+| gpu            | intel hd graphics 2500                 |
+| motherboard    | asus p8h61-m lx plus rev 2.0           |
+| ram            | 2 x 4gb 16000mhz ddr3                  |
