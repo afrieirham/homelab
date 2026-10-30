@@ -9,9 +9,10 @@ services:
       - "8080:80/tcp"
       - "8443:443/tcp"
     environment:
-      FTLCONF_dns_upstreams: "1.1.1.1;1.0.0.1"
       TZ: "Asia/Kuala_Lumpur"
+      FTLCONF_dns_upstreams: "1.1.1.1;1.0.0.1"
       FTLCONF_dns_listeningMode: "all"
+      FTLCONF_database_maxDBdays: 7
     volumes:
       - "/etc/pihole:/etc/pihole"
     cap_add:
