@@ -4,9 +4,10 @@ services:
     image: pihole/pihole:latest
     hostname: pihole
     ports:
-      # DNS Ports
       - "53:53/tcp"
       - "53:53/udp"
+      - "8080:80/tcp"
+      - "8443:443/tcp"
     environment:
       FTLCONF_dns_upstreams: "1.1.1.1;1.0.0.1"
       TZ: "Asia/Kuala_Lumpur"
@@ -17,26 +18,3 @@ services:
     cap_add:
       - SYS_NICE
     restart: unless-stopped
-
-  nginx-proxy:
-    container_name: nginx-proxy
-    image: nginx:latest
-    restart: unless-stopped
-    ports:
-      # The single entry point for all web traffic
-      - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    depends_on:
-      - pihole
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-
-
-volumes:
-  portainer_data:
-    name: portainer_data
-
-networks:
-  default:
-    name: portainer_network
